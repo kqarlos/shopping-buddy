@@ -1,5 +1,11 @@
+var connection = require("../config/connection.js");
+
 function selectAll();
 function insertOne();
 function updateOne();
 
-module.exports = ORM;
+var orm = {
+    
+};
+
+module.exports = orm;
