@@ -14,17 +14,50 @@
     <!-- Font Awesome CSS Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <!-- My stylesheets -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/css/style.css">
 
 
 
-    <title> Shopping Cart </title>
+    <title> Shopping Buddy </title>
 </head>
 
 <body>
 
-    {{{body}}}
+    <nav class="navbar bg-success justify-content-center">
+        <a class="navbar-brand py-2" href="/">
+            <span class="display-1 text-white"><i class="fas fa-store-alt"></i> My Shopping Buddy <i
+                    class="fas fa-store-alt"></i></span>
+        </a>
+    </nav>
+
+    <div class="container mt-5 mx-auto">
+
+        <!-- <div class="row">
+            <div class="col-12 display-4 py-3 rounded bg-dark text-center text-white">🛒 Shopping Cart</div>
+        </div> -->
+        <div class="row justify-content-around">
+            
+            {{{body}}}
+
+        </div>
+        <!--add new  -->
+        <div class="row rounded-pill bg-secondary py-3">
+            <div class="col-10 text-center">
+
+                <input type="password" class="form-control ml-4" id="newItem" placeholder="New item name here">
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-success" id="add">
+                    <i class="fas fa-plus"></i> Add to list</button>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
 
     <!-- jQuery JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -35,7 +68,7 @@
     <!-- Moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- My JavaScript -->
-    <script src="assets/js/script.js"></script>
+    <script src="public/assets/js/script.js"></script>
 
 </body>
 
