@@ -1,14 +1,12 @@
 $(function () {
 
-    getList();
+    renderList();
     $("#add").on("click", addToList);
     $(document).on("click", "#cart", addToCart);
     $(document).on("click", "#del", deleteItem);
 
 
-    function getList() {
-
-        // This function grabs posts from the database and updates the view
+    function renderList() {
 
         $.get("/api/list", function (data) {
             console.log("All items", data);
@@ -25,7 +23,6 @@ $(function () {
             item: $("#newItem").val().trim(),
             done: false
         };
-
         // Send the POST request.
         $.ajax("/api/list", {
             type: "POST",
@@ -37,9 +34,6 @@ $(function () {
             }
         );
 
-
-
-
     }
 
     function addToCart() {
@@ -50,6 +44,4 @@ $(function () {
 
 
     }
-}
-
 });

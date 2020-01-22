@@ -3,7 +3,7 @@ var shoppingList = require("../models/shoppinglist.js");
 
 var router = express.Router();
 
-router.get("/api/list", function (req, res) {
+router.get("/", function (req, res) {
   shoppingList.all(function (data) {
     console.log(data);
     res.render("index", { list: data });
