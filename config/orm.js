@@ -11,7 +11,7 @@ var orm = {
         });
     },
     create: function (table, cols, values, cb) {
-        var query = "INSERT INTO " + table + "(" + cols.toString(); + ") VALUES (" + vals + ") ";
+        var query = "INSERT INTO " + table + "(" + cols.toString(); + ") VALUES (" + values.toString() + ") ";
         console.log(query);
         connection.query(query, values, function (err, res) {
             if (err) throw err;
@@ -19,7 +19,7 @@ var orm = {
         });
     },
     update: function (table, values, condition, cb) {
-        var query = "UPDATE " + table + " SET " + values + " WHERE " + condition;
+        var query = "UPDATE " + table + " SET " + values.toString() + " WHERE " + condition;
         console.log(query);
         connection.query(query, function (err, res) {
             if (err) throw err;
