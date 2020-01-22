@@ -1,12 +1,12 @@
-DROP DATABASE IF EXISTS todo_db;
+DROP DATABASE IF EXISTS shoppinglist_db;
 
-CREATE DATABASE todo_db;
+CREATE DATABASE shoppinglist_db;
 
-USE todo_db;
+USE shoppinglist_db;
 
-CREATE TABLE TODO(
+CREATE TABLE list(
     id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL,
+    item VARCHAR(255) NOT NULL,
     done BOOLEAN DEFAULT false,
     PRIMARY KEY (id)
 )
