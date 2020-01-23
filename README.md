@@ -105,7 +105,7 @@ router.post("/api/list", function (req, res) {
 
 ## Deployed Link
 
-* [See Live Site](https://kqarlos.github.io/shopping-buddy)
+* [See Deployed Site](https://still-fjord-89924.herokuapp.com/)
 
 ## Author
 
