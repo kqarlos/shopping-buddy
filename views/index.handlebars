@@ -6,10 +6,12 @@
     </div>
 
     {{#each list}}
-    {{#if !done}}
+    {{#if done}}
+
+    {{else}}
     <div class="row">
         <div class="col-12 my-2 rounded-pill py-3 bg-secondary">
-            <button type="button" class="btn btn-success float-right" id="cart">
+            <button type="button" class="btn btn-success float-right" data-id={{id}} id="cart">
                 <i class="fas fa-check"></i> Add to cart</button>
             <h2 class="h2 text-center">{{item}}</h2>
         </div>
@@ -25,12 +27,12 @@
     <div class="row">
         <div class="col-12 display-4 my-2 py-3 rounded bg-dark text-center text-white">🛒 Cart</div>
     </div>
-    
+
     {{#each list}}
     {{#if done}}
     <div class="row">
         <div class="col-12 my-2 rounded-pill py-3 bg-secondary text-center">
-            <button type="button" class="btn btn-danger float-right" id="del">
+            <button type="button" class="btn btn-danger float-right" data-id={{id}} id="del">
                 <i class="fas fa-times"></i> Delete</button>
             <h2 class="h2">{{item}}</h2>
         </div>

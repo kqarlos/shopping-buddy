@@ -1,20 +1,20 @@
 $(function () {
 
-    renderList();
+    // renderList();
     $("#add").on("click", addToList);
-    $(document).on("click", "#cart", addToCart);
-    $(document).on("click", "#del", deleteItem);
+    $(document).on("click", "#cart", addToCart(event));
+    $(document).on("click", "#del", deleteItem(event));
 
 
-    function renderList() {
+    // function renderList() {
 
-        $.get("/api/list", function (data) {
-            console.log("All items", data);
-        });
+    //     $.get("/api/list", function (data) {
+    //         console.log("All items", data);
+    //     });
 
 
 
-    }
+    // }
 
     // Creates a new item and sends it to the route. Reload Page
     function addToList() {
@@ -36,12 +36,19 @@ $(function () {
 
     }
 
-    function addToCart() {
-
-
+    function addToCart(event) {
+        console.log("adding to cart");
+        var id = $(this).attr("data-id");
+        $.ajax("/api/list/" + id, {
+            type: "PUT",
+            data: { done: true }
+        }).then(function () {
+            console.log("changed " + id + "to done");
+            location.reload();
+        });
     }
-    function deleteItem() {
-
-
+    function deleteItem(event) {
+        var id = $(this).attr("data-id");
+        console.log("deleting " + id);
     }
 });
