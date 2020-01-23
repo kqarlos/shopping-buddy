@@ -39,9 +39,14 @@ $(function () {
         });
     }
 
-    //Grabs the id form the button.
+    //Grabs the id form the button. Sends the id to the server to get deleted.
     function deleteItem(event) {
         var id = $(this).attr("data-id");
-        console.log("deleting " + id);
+        $.ajax("/api/list/" + id, {
+            type: "DELETE"
+        }).then(function () {
+            console.log("deleting " + id);
+            location.reload();
+        });
     }
 });

@@ -29,4 +29,14 @@ router.put("/api/list/:id", function (req, res) {
   });
 });
 
+router.delete("/api/list/:id", function (req, res) {
+  shoppingList.delete("id=" + req.params.id, function (result) {
+    if (result.affectedRows == 0) {
+      return res.status(404).end();
+    } else {
+      res.status(200).end();
+    }
+  });
+});
+
 module.exports = router;
