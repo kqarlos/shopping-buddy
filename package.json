@@ -1,7 +1,7 @@
 {
-  "name": "burger",
+  "name": "shopping-buddy",
   "version": "1.0.0",
-  "description": "App that lets you add and eat burgers",
+  "description": "App that lets keep track of your shopping",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

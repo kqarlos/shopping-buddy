@@ -4,7 +4,7 @@ CREATE DATABASE shoppinglist_db;
 
 USE shoppinglist_db;
 
-CREATE TABLE list(
+CREATE TABLE shoppingList(
     id INT NOT NULL AUTO_INCREMENT,
     item VARCHAR(255) NOT NULL,
     done BOOLEAN DEFAULT false,

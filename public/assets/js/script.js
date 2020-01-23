@@ -12,7 +12,7 @@ $(function () {
             done: false
         };
         // Send the POST request.
-        $.ajax("/api/list", {
+        $.ajax("/api/shoppinglist", {
             type: "POST",
             data: item
         }).then(
@@ -28,7 +28,7 @@ $(function () {
     function addToCart() {
         console.log("adding to cart");
         var id = $(this).attr("data-id");
-        $.ajax("/api/list/" + id, {
+        $.ajax("/api/shoppinglist/" + id, {
             type: "PUT",
             data: {
                 done: true
@@ -42,7 +42,7 @@ $(function () {
     //Grabs the id form the button. Sends the id to the server to get deleted.
     function deleteItem(event) {
         var id = $(this).attr("data-id");
-        $.ajax("/api/list/" + id, {
+        $.ajax("/api/shoppinglist/" + id, {
             type: "DELETE"
         }).then(function () {
             console.log("deleting " + id);

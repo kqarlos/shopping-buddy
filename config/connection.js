@@ -1,5 +1,6 @@
 var mysql = require("mysql");
 
+// Connection credentials
 var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
@@ -8,6 +9,7 @@ var connection = mysql.createConnection({
   database: "shoppinglist_db"
 });
 
+// Connect to MySQL database
 connection.connect(function(err) {
   if (err) {
     console.error("error connecting: " + err.stack);
