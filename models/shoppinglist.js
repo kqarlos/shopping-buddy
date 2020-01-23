@@ -16,6 +16,6 @@ var shoppingList = {
             cb(res);
         })
     }
-}
+} 
 
 module.exports = shoppingList;

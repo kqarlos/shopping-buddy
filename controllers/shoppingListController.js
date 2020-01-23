@@ -12,12 +12,14 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/list", function (req, res) {
-  shoppingList.create(["item", "done"], [req.body.item, req.body.done], function (result) {
+  console.log("Data to add - item: " + "\"" + req.body.item + "\"" + " done: " + req.body.done);
+  shoppingList.create(["item", "done"], ["\"" + req.body.item + "\"", req.body.done], function (result) {
     res.json({ id: result.insertID });
   });
 });
 
 router.put("/api/list/:id", function (req, res) {
+  console.log("id: " + req.params.id + ", Done: " + req.body.done);
   shoppingList.update(["done = " + req.body.done], "id=" + req.params.id, function (result) {
     if (result.changedRows == 0) {
       return res.status(404).end();

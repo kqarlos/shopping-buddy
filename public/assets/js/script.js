@@ -1,22 +1,10 @@
 $(function () {
 
-    // renderList();
     $("#add").on("click", addToList);
-    $(document).on("click", "#cart", addToCart(event));
-    $(document).on("click", "#del", deleteItem(event));
+    $(".cart").on("click", addToCart);
+    $(".del").on("click", deleteItem);
 
-
-    // function renderList() {
-
-    //     $.get("/api/list", function (data) {
-    //         console.log("All items", data);
-    //     });
-
-
-
-    // }
-
-    // Creates a new item and sends it to the route. Reload Page
+    // Creates a new item and sends it to the server. Reloads Page
     function addToList() {
 
         var item = {
@@ -36,17 +24,22 @@ $(function () {
 
     }
 
-    function addToCart(event) {
+    //Gets item id from the button. Sends id to the server to update its value and move to the shopping cart
+    function addToCart() {
         console.log("adding to cart");
         var id = $(this).attr("data-id");
         $.ajax("/api/list/" + id, {
             type: "PUT",
-            data: { done: true }
+            data: {
+                done: true
+            }
         }).then(function () {
             console.log("changed " + id + "to done");
             location.reload();
         });
     }
+
+    //Grabs the id form the button.
     function deleteItem(event) {
         var id = $(this).attr("data-id");
         console.log("deleting " + id);

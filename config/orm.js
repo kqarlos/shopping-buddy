@@ -11,7 +11,7 @@ var orm = {
         });
     },
     create: function (table, cols, values, cb) {
-        var query = "INSERT INTO " + table + "(" + cols.toString(); + ") VALUES (" + values.toString() + ") ";
+        var query = "INSERT INTO " + table + " (" + cols.toString() + ") VALUES (" + values.toString() + ")";
         console.log(query);
         connection.query(query, values, function (err, res) {
             if (err) throw err;
