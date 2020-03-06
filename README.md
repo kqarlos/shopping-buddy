@@ -18,10 +18,6 @@ node server.js
 
 ```
 
-## Deployed Link
-
-* [See Deployed Site](https://shopping-buddy2020.herokuapp.com/)
-
 
 ## Site Pictures
 
@@ -107,6 +103,10 @@ router.post("/api/list", function (req, res) {
 * [Express](https://www.npmjs.com/package/express)
 * [MySQL](https://www.mysql.com/)
 * [Handlebars](https://handlebarsjs.com/)
+
+## Deployed Link
+
+* [See Deployed Site](https://shopping-buddy2020.herokuapp.com/)
 
 ## Author
 
