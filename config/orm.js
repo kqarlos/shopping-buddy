@@ -1,6 +1,6 @@
 var connection = require("../config/connection.js");
 
-//ORM directly interacts with the database using queries
+//ORM directly interacts with the database using MySQL queries
 var orm = {
     all: function (table, cb) {
         query = "SELECT * FROM " + table + ";";

@@ -1,6 +1,7 @@
 var express = require("express");
 var shoppingList = require("../models/shoppinglist.js");
 
+// Has all the server routes
 var router = express.Router();
 
 // Get all items from the shoppingList model and render them using index.handlebars

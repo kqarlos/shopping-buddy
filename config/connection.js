@@ -1,6 +1,6 @@
 var mysql = require("mysql");
 
-// Connection credentials
+// Connection credentials. JAWSDB_URL is used for heroku deployment
 var connection;
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);

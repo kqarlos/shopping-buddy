@@ -18,6 +18,11 @@ node server.js
 
 ```
 
+## Deployed Link
+
+* [See Deployed Site](https://shopping-buddy2020.herokuapp.com/)
+
+
 ## Site Pictures
 
 Working site
@@ -103,10 +108,6 @@ router.post("/api/list", function (req, res) {
 * [MySQL](https://www.mysql.com/)
 * [Handlebars](https://handlebarsjs.com/)
 
-## Deployed Link
-
-* [See Deployed Site](https://still-fjord-89924.herokuapp.com/)
-
 ## Author
 
  * **Carlos Toledo** 
@@ -116,10 +117,3 @@ router.post("/api/list", function (req, res) {
 - [Link to site repository](https://github.com/kqarlos/shopping-buddy)
 - [Link to Github](https://www.github.com/kqarlos)
 - [Link to LinkedIn](https://www.linkedin.com/in/carlos-toledo415/)
-
-
-## Acknowledgments
-
-* [W3 Schools](https://www.w3schools.com/)
-* [Bootstrap components](https://getbootstrap.com/docs/4.4/components/navbar/)
-* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
