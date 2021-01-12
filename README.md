@@ -1,8 +1,32 @@
-# Shopping Buddy
+# Shopping Buddy 🛒
+
+</br>
+<p align="center">
+    <img src="https://img.shields.io/github/languages/count/kqarlos/shopping-buddy?style=for-the-badge" alt="Languages" />
+    <img src="https://img.shields.io/github/languages/top/kqarlos/shopping-buddy?style=for-the-badge" alt="Top Language" />
+    <img src="https://img.shields.io/github/languages/code-size/kqarlos/shopping-buddy?style=for-the-badge" alt="Code Size" />
+    <img src="https://img.shields.io/github/repo-size/kqarlos/shopping-buddy?style=for-the-badge" alt="Repo Size" />   
+    <img src="https://img.shields.io/tokei/lines/github/kqarlos/shopping-buddy?style=for-the-badge" alt="Total Lines" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/kqarlos/shopping-buddy/mysql?style=for-the-badge" alt="MySQL Version" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/kqarlos/shopping-buddy/express?style=for-the-badge" alt="Express Version" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/kqarlos/shopping-buddy/express-handlebars?style=for-the-badge" alt="Express-Handlebars Version" />
+    <img src="https://img.shields.io/github/last-commit/kqarlos/shopping-buddy?style=for-the-badge" alt="Last Commit" />  
+    <img src="https://img.shields.io/github/issues/kqarlos/shopping-buddy?style=for-the-badge" alt="Issues" />  
+    <img src="https://img.shields.io/github/followers/kqarlos?style=social" alt="Followers" />  
+</p>
+
+## Description
 
 Keep track of what you need to get with Shopping Buddy. Add, change and delete items as you go shopping.
 
-## Getting Started
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+
+## Installation
 
 Steps to run application:
 1. Clone git repository
@@ -15,17 +39,22 @@ Steps to run application:
 git clone git@github.com:kqarlos/shopping-buddy.git
 npm install
 node server.js
-
 ```
 
+<p align="center">
+    <a href="https://shopping-buddy2020.herokuapp.com/"><img src="https://img.shields.io/badge/-👉 See Live Site-success?style=for-the-badge"  alt="Live Site" /></a>
+</p>
 
-## Site Pictures
+
+## Usage
+
+### Screenshots
 
 Working site
 
 ![Site](public/assets/images/live.gif)
 
-## Code Snippets
+### Snippets
 
 ### Inserting a new item
 
@@ -93,27 +122,32 @@ router.post("/api/list", function (req, res) {
 ```
 * The ORM takes the information from the _Shopping List_ model and builds the query. This query is then sent to the MySQL database connection to be run.
 
-## Built With
+## Credits 
 
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [Bootstrap](https://getbootstrap.com/)
-* [Javascript](https://www.javascript.com/)
-* [Node.js](https://nodejs.org/en/)
-* [Express](https://www.npmjs.com/package/express)
-* [MySQL](https://www.mysql.com/)
-* [Handlebars](https://handlebarsjs.com/)
+### Author
 
-## Deployed Link
+- 💼 Carlos Toledo: [portfolio](https://professional-portfolio2020.herokuapp.com/)
+- :octocat: Github: [kqarlos](https://www.github.com/kqarlos)
+- LinkedIn: [carlos-toledo415](https://www.linkedin.com/in/carlos-toledo415/)
 
-* [See Deployed Site](https://shopping-buddy2020.herokuapp.com/)
 
-## Author
+### Built With
 
- * **Carlos Toledo** 
+</br>
+<p align="center">
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.shields.io/badge/-HTML-orange?style=for-the-badge"  alt="HMTL" /></a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/-CSS-blue?style=for-the-badge" alt="CSS" /></a>
+    <a href="https://www.javascript.com/"><img src="https://img.shields.io/badge/-Javascript-yellow?style=for-the-badge" alt="Javascript" /></a>
+    <a href="https://getbootstrap.com/"><img src="https://img.shields.io/badge/-Bootstrap-blue?style=for-the-badge" alt="Bootstrap" /></a>
+    <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/-Node-orange?style=for-the-badge" alt="Node" /></a>
+    <a href="https://www.npmjs.com/package/express"><img src="https://img.shields.io/badge/-Express-green?style=for-the-badge" alt="Express" /></a>
+    <a href="https://www.mysql.com/"><img src="https://img.shields.io/badge/-MySQL-blue?style=for-the-badge" alt="MySQL" /></a>
+    <a href="https://handlebarsjs.com/"><img src="https://img.shields.io/badge/-Handlebars-green?style=for-the-badge" alt="Handlebars" /></a>
+</p>
 
-## Links
+## License
 
-- [Link to site repository](https://github.com/kqarlos/shopping-buddy)
-- [Link to Github](https://www.github.com/kqarlos)
-- [Link to LinkedIn](https://www.linkedin.com/in/carlos-toledo415/)
+</br>
+<p align="center">
+    <img align="center" src="https://img.shields.io/github/license/kqarlos/shopping-buddy?style=for-the-badge" alt="MIT license" />
+</p>
