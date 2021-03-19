@@ -5,8 +5,8 @@ CREATE DATABASE shoppinglist_db;
 USE shoppinglist_db;
 
 CREATE TABLE shoppingList(
-    id INT NOT NULL AUTO_INCREMENT,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     item VARCHAR(255) NOT NULL,
     done BOOLEAN DEFAULT false,
-    PRIMARY KEY (id)
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 )
