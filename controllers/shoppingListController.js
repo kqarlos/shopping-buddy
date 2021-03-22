@@ -44,4 +44,8 @@ router.delete("/api/shoppinglist/:id", function (req, res) {
   });
 });
 
+router.use((req, res) => {
+  res.status(404).end();
+});
+
 module.exports = router;
