@@ -29,17 +29,18 @@ Keep track of what you need to get with Shopping Buddy. Add, change and delete i
 ## Installation
 
 Steps to run application:
-1. Clone git repository
-2. Install dependencies
-3. Create schema with given schema.sql, seed.sql, and employees.csv using the command line of MySQL workspace.
-4. Update database credentials inside config/connection.js
-5. run app
 
-```
-git clone git@github.com:kqarlos/shopping-buddy.git
-npm install
-node server.js
-```
+    Command prompt:
+    1. mysql -u root -p
+    2. Enter password
+    3. source db/schema.sql
+    4. source d/seeds.sql (optional)
+
+    Git Bash
+    1. git clone git@github.com:kqarlos/shopping-buddy.git
+    2. npm install
+    3. add enviroment variables or update credentials in connection.js
+    4. npm start
 
 <p align="center">
     <a href="https://shopping-buddy2020.herokuapp.com/"><img src="https://img.shields.io/badge/-👉 See Live Site-success?style=for-the-badge"  alt="Live Site" /></a>

@@ -4,6 +4,8 @@ CREATE DATABASE shoppinglist_db;
 
 USE shoppinglist_db;
 
+DROP TABLE IF EXISTS Employee;
+
 CREATE TABLE shoppingList(
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     item VARCHAR(255) NOT NULL,
