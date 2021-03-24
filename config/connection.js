@@ -1,4 +1,5 @@
 var mysql = require("mysql");
+require('dotenv').config();
 
 // Connection credentials. JAWSDB_URL is used for heroku deployment
 var connection;
@@ -8,9 +9,9 @@ if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
-    user: "root",
-    password: "password",
-    database: "shoppinglist_db"
+    user: process.env.DB_USER,
+    password: process.env.DB_PW,
+    database: process.env.DB_NAME
   });
 }
 
