@@ -12,7 +12,7 @@
     "url": "git+https://github.com/kqarlos/burger.git"
   },
   "author": "Carlos Toledo",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kqarlos/burger/issues"
   },
