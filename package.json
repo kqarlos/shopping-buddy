@@ -19,7 +19,7 @@
   "homepage": "https://github.com/kqarlos/burger#readme",
   "dependencies": {
     "dotenv": "^8.6.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-handlebars": "^5.3.3",
     "mysql": "^2.18.1"
   }
